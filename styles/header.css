@@ -12,6 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
 }
 
@@ -22,4 +23,24 @@
 
 .container__imagem {
     padding: 1em;
+}
+
+/*esconde texto do menu categorias do header*/
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%
+}
+/*reação do clique no menu hamburguer, aparecer e esconder lista categorias*/
+.container__botao:checked~.lista-menu {
+    display: block;
+}
+.lista-menu__titulo,
+.lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__titulo {
+    color: var(--laranja)
 }
