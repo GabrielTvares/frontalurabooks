@@ -30,6 +30,7 @@
     display: none;
     position: absolute;
     top: 100%
+    width: 60vw;
 }
 /*reação do clique no menu hamburguer, aparecer e esconder lista categorias*/
 .container__botao:checked~.lista-menu {
@@ -46,8 +47,9 @@
 }
 
 .lista-menu__link{
-    background: var(----azul-degrade);
+    background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-transform: uppercase;
 }
