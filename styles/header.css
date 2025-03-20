@@ -29,8 +29,8 @@
 .lista-menu {
     display: none;
     position: absolute;
-    top: 100%
     width: 60vw;
+    top: 100%
 }
 /*reação do clique no menu hamburguer, aparecer e esconder lista categorias*/
 .container__botao:checked~.lista-menu {
