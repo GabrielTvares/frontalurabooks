@@ -43,6 +43,7 @@
 }
 
 .lista-menu__titulo {
+    font-weight: 700;
     color: var(--laranja)
 }
 
@@ -52,4 +53,9 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+
+/*remover caixa de marcacao menu hamburguer*/
+.container__botao {
+    display: none;
 }
