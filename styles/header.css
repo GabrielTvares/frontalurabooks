@@ -1,19 +1,18 @@
-.cabecalho__menu-hamburguer {
+.cabeçalho__menu-hamburguer {
     width: 24px;
     height: 24px;
-    background-image: url("../assets/Menu.svg");
+    background-image: url("../img/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
 }
 
-.cabecalho {
+.cabeçalho {
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-
 }
 
 .container {
@@ -25,17 +24,17 @@
     padding: 1em;
 }
 
-/*esconde texto do menu categorias do header*/
 .lista-menu {
     display: none;
     position: absolute;
+    top: 100%;
     width: 60vw;
-    top: 100%
 }
-/*reação do clique no menu hamburguer, aparecer e esconder lista categorias*/
+
 .container__botao:checked~.lista-menu {
     display: block;
 }
+
 .lista-menu__titulo,
 .lista-menu__item {
     padding: 1em;
@@ -43,11 +42,11 @@
 }
 
 .lista-menu__titulo {
+    color: var(--laranja);
     font-weight: 700;
-    color: var(--laranja)
 }
 
-.lista-menu__link{
+.lista-menu__link {
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -55,7 +54,6 @@
     text-transform: uppercase;
 }
 
-/*remover caixa de marcacao menu hamburguer*/
 .container__botao {
     display: none;
 }
@@ -64,14 +62,15 @@
     display: none;
 }
 
-.opcoes {
+.opções {
     display: none;
 }
 
 @media screen and (min-width: 1024px) {
+
     .container__titulo,
     .container__titulo--negrito {
-        font-family: var(--font-secundaria);
+        font-family: var(--fonte-secundario);
         font-size: 30px;
     }
 
@@ -84,18 +83,16 @@
         font-weight: 700;
     }
 
-    .opcoes {
+    .opções {
         display: flex;
-
     }
 
-    .opcoes__item {
+    .opções__item {
         padding: 0 1em;
         text-transform: uppercase;
-
     }
 
-    .opcoes__link {
+    .opções__link {
         text-decoration: none;
         color: var(--preto);
     }
@@ -104,16 +101,17 @@
         display: none;
     }
 
-    .cabecalho__menu-hamburguer {
+    .cabeçalho__menu-hamburguer {
         display: none;
     }
 
-    .opcoes__botao:checked ~.lista-menu {
+    .opções__botão:checked~.lista-menu {
         display: block;
         width: auto;
     }
 
-    .opcoes__botao {
+    .opções__botão {
         display: none;
     }
+
 }

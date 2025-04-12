@@ -17,8 +17,8 @@
 }
 
 .contato__texto {
-font-weight: 300;
-margin: 1em 0
+    font-weight: 300;
+    margin: 1em 0;
 }
 
 .contato__email {
@@ -30,9 +30,9 @@ margin: 1em 0
 }
 
 .contato__email::placeholder {
-    font-family: var(--font-principal);
+    font-family: var(--fonte-principal);
     color: var(--azul);
-    background: url("../assets/Email.svg") no-repeat;
+    background: url("../img/Email.svg") no-repeat;
     padding-left: 2em;
 }
 
@@ -47,7 +47,7 @@ margin: 1em 0
         font-size: 24px;
     }
 
-    .contato__descricao {
+    .contato__descrição {
         margin-right: 1em;
         width: 30%;
     }
